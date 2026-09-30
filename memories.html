@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+<title>Birthday Memories 💗</title>
+
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@400;600&display=swap">
+
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+
+        min-height: 100vh;
+
+        background:
+            linear-gradient(
+                135deg,
+                #fff0f6,
+                #f3e8ff,
+                #fff7ed
+            );
+
+        font-family: 'Poppins', sans-serif;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        text-align: center;
+
+        color: #593653;
+
+    }
+
+    .page {
+
+        width: 90%;
+
+        max-width: 1100px;
+
+        padding: 50px 20px;
+
+    }
+
+    h1 {
+
+        font-family: 'Dancing Script', cursive;
+
+        font-size: 4rem;
+
+        margin-bottom: 15px;
+
+        color: #d86b9b;
+
+    }
+
+    .subtitle {
+
+        font-size: 1.2rem;
+
+        color: #76546f;
+
+        margin-bottom: 40px;
+
+    }
+
+
+    /* VIDEO + NOTE */
+
+    .memory-container {
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 30px;
+
+        width: 100%;
+
+    }
+
+
+    /* VIDEO */
+
+    .video-box {
+
+        flex: 1;
+
+        background: rgba(255,255,255,0.65);
+
+        border: 3px solid #e5a1c0;
+
+        border-radius: 30px;
+
+        padding: 15px;
+
+        box-shadow:
+            0 15px 40px rgba(120,70,100,0.15);
+
+        overflow: hidden;
+
+    }
+
+    .video-box video {
+
+        width: 100%;
+
+        max-height: 70vh;
+
+        display: block;
+
+        margin: 0 auto;
+
+        border-radius: 20px;
+
+    }
+
+
+    /* NOTE */
+
+    .note-box {
+
+        flex: 1;
+
+        min-height: 350px;
+
+        background: rgba(255,255,255,0.65);
+
+        border: 3px solid #e5a1c0;
+
+        border-radius: 30px;
+
+        padding: 35px;
+
+        box-shadow:
+            0 15px 40px rgba(120,70,100,0.15);
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+    }
+
+    .note-box i {
+
+        font-size: 2.5rem;
+
+        color: #d86b9b;
+
+        margin-bottom: 15px;
+
+    }
+
+    .note-box h2 {
+
+        font-family: 'Dancing Script', cursive;
+
+        font-size: 2.3rem;
+
+        color: #d86b9b;
+
+        margin-bottom: 20px;
+
+    }
+
+    .note-box p {
+
+        font-size: 1rem;
+
+        line-height: 1.8;
+
+        color: #76546f;
+
+    }
+
+
+    /* BACK BUTTON */
+
+    .back {
+
+        display: inline-block;
+
+        margin-top: 30px;
+
+        padding: 12px 25px;
+
+        border-radius: 30px;
+
+        background: #e5a1c0;
+
+        color: #593653;
+
+        text-decoration: none;
+
+        font-weight: 600;
+
+        border: 2px solid #593653;
+
+    }
+
+    .back:hover {
+
+        background: #d86b9b;
+
+        color: white;
+
+    }
+
+
+    /* MOBILE */
+
+    @media (max-width: 768px) {
+
+        .page {
+
+            width: 95%;
+
+            padding: 35px 10px;
+
+        }
+
+        h1 {
+
+            font-size: 3rem;
+
+        }
+
+        .subtitle {
+
+            font-size: 1rem;
+
+            margin-bottom: 25px;
+
+        }
+
+        .memory-container {
+
+            flex-direction: column;
+
+            gap: 25px;
+
+        }
+
+        .video-box,
+
+        .note-box {
+
+            width: 100%;
+
+            flex: none;
+
+        }
+
+        .note-box {
+
+            min-height: 300px;
+
+            padding: 25px;
+
+        }
+
+        .note-box h2 {
+
+            font-size: 2rem;
+
+        }
+
+    }
+
+</style>
+
+</head>
+
+
+<body>
+
+    <div class="page">
+
+        <h1>Chal Happy Birthday 💗</h1>
+
+        <p class="subtitle">
+            If You Don't Like It, Then Don't, Go To Sleep.
+        </p>
+
+
+        <div class="memory-container">
+
+
+            <!-- VIDEO -->
+
+            <div class="video-box">
+
+                <video controls playsinline preload="metadata">
+
+                    <source src="./images/video.mp4" type="video/mp4">
+
+                    Your browser does not support the video tag.
+
+                </video>
+
+            </div>
+
+
+            <!-- YOUR NOTE -->
+
+            <div class="note-box">
+
+                <i class="fa-solid fa-heart"></i>
+
+                <h2>Two Sweet Words 💗</h2>
+
+                <p>
+                    Happy and Birthday aur zyada kuch hai nahi bolneko!
+                    BTW someone's getting older today HAHAHAHA Aunty.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <a href="index.html" class="back">
+            ← Back 
+        </a>
+
+    </div>
+
+</body>
+
+</html>
